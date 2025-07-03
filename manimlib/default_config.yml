@@ -46,9 +46,17 @@ window:
   # Other optional specifications that override the above include:
   # position: (500, 500)  # Specific position, in pixel coordinates, for upper right corner
   # size: (1920, 1080)  # Specific size, in pixels
+  # size: (1728, 972)  # 90% fullscreen
+  # size: (1536, 864)  # 80% fullscreen
+  # size: (1440, 810)  # 75% fullscreen
+  size: (1344, 756)  # 70% fullscreen
 camera:
   resolution: (1920, 1080)
-  background_color: "#333333"
+  # Set 1:
+  background_color: "#000000"
+  # background_color: "#121212"
+  # Set 2:
+  # background_color: "#FFFFC0"
   fps: 30
   background_opacity: 1.0
 file_writer:
@@ -74,14 +82,18 @@ vmobject:
   default_stroke_color: "#DDDDDD"     # Default is GREY_A
   default_fill_color: "#888888"       # Default is GREY_C
 mobject:
-  default_mobject_color: "#FFFFFF"    # Default is WHITE
-  default_light_color: "#BBBBBB"      # Default is GREY_B
+  # Set 1:
+  default_mobject_color: "#FFFFFF"
+  default_light_color: "#BBBBBB"
+  # Set 2:
+  # default_mobject_color: "#000000"
+  # default_light_color: "#121212"
 tex:
   # See tex_templates.yml
   template: "default"
 text:
   # font: "Cambria Math"
-  font: "Consolas"
+  font: "CMU Serif"
   alignment: "LEFT"
 embed:
   exception_mode: "Verbose"
@@ -175,9 +187,6 @@ colors:
   light_pink: "#DC75CD"
   green_screen: "#00FF00"
   orange: "#FF862F"
-  pure_red: "#FF0000"
-  pure_green: "#00FF00"
-  pure_blue: "#0000FF"
 # Can be DEBUG / INFO / WARNING / ERROR / CRITICAL
 log_level: "INFO"
 universal_import_line: "from manimlib import *"

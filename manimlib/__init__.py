@@ -76,3 +76,6 @@ from manimlib.utils.shaders import *
 from manimlib.utils.sounds import *
 from manimlib.utils.space_ops import *
 from manimlib.utils.tex import *
+
+from manimlib.custom.objects import *
+from manimlib.custom.scene import *

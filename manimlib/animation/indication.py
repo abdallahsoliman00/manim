@@ -88,6 +88,24 @@ class Indicate(Transform):
         target.scale(self.scale_factor)
         target.set_color(self.color)
         return target
+    
+
+class Shake(Transform):
+    def __init__(
+        self,
+        mobject: Mobject,
+        shake_strength: float = -0.1,
+        rate_func: Callable[[float], float] = wiggle,
+        run_time: float = 0.5,
+        **kwargs
+    ):
+        super().__init__(
+            mobject=mobject,
+            target_mobject=mobject.copy().rotate(shake_strength),
+            rate_func=rate_func,
+            run_time=run_time,
+            **kwargs
+        )
 
 
 class Flash(AnimationGroup):
