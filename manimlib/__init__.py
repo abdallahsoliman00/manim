@@ -79,3 +79,5 @@ from manimlib.utils.tex import *
 
 from manimlib.custom.objects import *
 from manimlib.custom.scene import *
+from manimlib.custom.colours import *
+from manimlib.custom.custom_mobjects.figure import *
