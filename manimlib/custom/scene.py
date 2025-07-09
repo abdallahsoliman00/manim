@@ -131,4 +131,4 @@ class ShaderScene(InteractiveScene):
 class CustomBackgroundScene(ShaderScene):
     shader_folder = 'background'
     shader_directory = r'C:\Users\abdal\AppData\Local\Programs\Python\Python312\Lib\site-packages\manimlib\custom'
-    uniforms = dict(alpha = 0.125)
+    uniforms = dict(alpha = 0.16)
